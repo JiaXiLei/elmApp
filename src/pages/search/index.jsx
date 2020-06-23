@@ -1,13 +1,16 @@
 import React from 'react'
 import './styles.less'
+import Header from '@@/Header'
 
+export default function useOrder(props) {
 
-export default function useOrder() {
-
+    const hisBack = () => {
+        props.history.go(-1)
+    }
 
     return (
         <div className="pages-order">
-            order
+            <Header hisBack={hisBack} title='搜索' />
         </div>
     )
 }
