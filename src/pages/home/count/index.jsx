@@ -8,10 +8,8 @@ const IconFont = createFromIconfontCN({
 
 
 export default function useHomeCount() {
-
     return (
-        <div className="home-count">
-            
+        <div className="home-count">        
             homecount
         </div>
     )
